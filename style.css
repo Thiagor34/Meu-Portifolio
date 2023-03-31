@@ -29,6 +29,10 @@ body {
     padding: 10px;
     font-size: 20px;
     margin: auto 0;
+} 
+
+.header_logo_sub {
+    color: white;
 }
 
 .header_logo_img {
@@ -42,6 +46,26 @@ body {
     box-shadow: 0px 0px 15px rgb(255, 0, 0);
     width: 50px;
     height: 50px;
+}   
+
+.header_logo > .caixa {
+    width: 200px;
+    height: 200px;
+    color: rgb(236, 50, 50);
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.caixa::before, .caixa::after {
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff);    
+    background-size: 300%;
 }
 
 .header_logo > span {
@@ -122,8 +146,51 @@ body {
 .projects {
     width: 100%;
     height: 100vh;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
 }
+
+.project_contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project_row_img {
+    width: 100%;
+}
+
+.project_row_content {
+    width: 100%;
+    display: flex;
+    padding-left: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.project_row_content > h3 {
+    font-size: 30px;    
+}
+
+.project_row_content > a {
+    width: 180px;  
+}
+
+.projects_row {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+img {
+    width: 600px;
+    height: 300px;
+}
+
 
 .about {
     width: 100%;
@@ -158,8 +225,11 @@ body {
 }
 
 .sec_sub  {
+    width: 70%;
     font-size: 21px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px double black;
 }
 
 .about_content_sub {
@@ -227,10 +297,16 @@ body {
     text-align: center;
 }
 
+.contact {
+    height: 150vh;
+    background-color: rgb(226, 226, 226);
+}
+
 .contact_form {
-    width: 70%;
-    height: 100vh;
-    background-color: rgb(168, 167, 167);
+    width: 60%;
+    height: 85vh;
+    background-color: rgb(245, 247, 153);
+    box-shadow: 0 0 10px black;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -239,26 +315,31 @@ body {
 }
 
 .form_field {
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: auto;
+    font-size: 20px;
+    padding: 5px;
 }
 
 .form_input {
     padding: 5px;
     height: 50px;
     font-size: 20px;
+    background-color: rgb(255, 255, 255);
 }
 
 .form_text_area {
     padding: 5px;
     font-size: 20px;
+    background-color: rgb(255, 255, 255);
 }
 
 .contact_form > a {
-    margin: 0 98px;
+    margin: 0 65px;
+    box-shadow: 0 0 5px black;
     width: 180px;
 }
 
